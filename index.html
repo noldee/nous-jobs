@@ -5,76 +5,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nous — Encuentra tu empleo ideal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-slate-50 text-slate-700">
+<body class="text-slate-700">
 
-    <!-- NAV -->
-    <nav class="bg-white border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-4xl font-bold text-indigo-600">Nous</h1>
-            <a href="publicar.html"
-                class="text-sm bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
-                Publicar empleo
-            </a>
-        </div>
-    </nav>
+    <div class="content">
+        <!-- NAV -->
+        <nav>
+            <div
+                class="max-w-screen-2xl m-auto w-full px-3 sm:px-8 lg:px-16 xl:px-32 flex items-center justify-between py-4">
+                <div>
+                    <h1 class="text-4xl font-bold text-indigo-600 poppins-extrabold">Nous</h1>
+                </div>
+                <div class="hidden gap-8 lg:flex">
+                    <a type="button" href="/feature" aria-disabled="false"
+                        class="group poppins-semibold  inline-flex items-center justify-center whitespace-nowrap rounded-lg py-2 align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed stroke-slate-500 px-2 text-black h-[38px] min-w-[38px] gap-2 cursor-pointer disabled:stroke-slate-400 disabled:text-slate-400 hover:opacity-80">
+                        <div>Buscar Empleo</div>
+                    </a>
+                    <a type="button" href="/about" aria-disabled="false"
+                        class="group poppins-semibold  inline-flex items-center justify-center whitespace-nowrap rounded-lg py-2 align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed stroke-slate-500 px-2 text-black h-[38px] min-w-[38px] gap-2 cursor-pointer disabled:stroke-slate-400 disabled:text-slate-400 hover:opacity-80">
+                        <div>Buscar Empresas</div>
+                    </a>
+                    <a type="button" href="/pricing" aria-disabled="false"
+                        class="group poppins-semibold  inline-flex items-center justify-center whitespace-nowrap rounded-lg py-2 align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed stroke-slate-500 px-2 text-black h-[38px] min-w-[38px] gap-2 cursor-pointer disabled:stroke-slate-400 disabled:text-slate-400 hover:opacity-80">
+                        <div>Salarios</div>
+                    </a>
 
-    <!-- HERO -->
-    <header class="max-w-7xl mx-auto px-6 py-16 text-center">
-        <h2 class="text-7xl font-bold text-slate-800 leading-tight">
-            Encuentra el trabajo que<br />
-            <span class="text-indigo-600">encaja contigo</span>
-        </h2>
-        <p class="mt-4 text-slate-500 max-w-xl mx-auto">
-            Miles de oportunidades en tecnología, diseño y negocios.
-            Filtra, explora y aplica fácilmente.
-        </p>
-    </header>
+                </div>
+                <div class="flex justify-end gap-2 2xl:flex-1">
 
-    <!-- BUSCADOR -->
-    <section class="max-w-6xl mx-auto px-6 -mt-10">
-        <div class="bg-white rounded-2xl shadow-lg p-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <a href="publicar.html"
+                        class="group items-center justify-center whitespace-nowrap rounded-lg py-2 align-middle text-sm font-semibold leading-none transition-all duration-300 ease-in-out disabled:cursor-not-allowed bg-blue-700 stroke-white px-6 text-white hover:bg-blue-950 h-[38px] min-w-[38px] gap-2 disabled:bg-slate-100 disabled:stroke-slate-400 disabled:text-slate-400 disabled:hover:bg-slate-100 hidden min-[375px]:inline-flex">
+                        <div>Sign In</div>
+                    </a>
+                </div>
+            </div>
+        </nav>
 
-            <input type="text" placeholder="Puesto o palabra clave"
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+        <!-- HERO -->
+        <header class="max-w-7xl mx-auto px-6 py-16 text-center">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-800 leading-tight poppins-extrabold">
+                Encuentra el trabajo que<br />
+                <span class="text-indigo-600 poppins-black">encaja contigo</span>
+            </h2>
+            <p class="mt-4 text-slate-500 max-w-xl mx-auto">
+                Miles de oportunidades en tecnología, diseño y negocios.
+                Filtra, explora y aplica fácilmente.
+            </p>
+        </header>
 
-            <input type="text" placeholder="Ciudad o remoto"
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+        <!-- BUSCADOR -->
+        <section class="max-w-6xl mx-auto px-6 -mt-10">
+            <div class="bg-white rounded-2xl shadow-lg p-6 grid grid-cols-1 md:grid-cols-4 gap-4">
 
-            <select
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                <option>Modalidad</option>
-                <option>Remoto</option>
-                <option>Presencial</option>
-                <option>Híbrido</option>
-            </select>
+                <input type="text" placeholder="Puesto o palabra clave" id="puesto-clave"
+                    class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
 
-            <button class="bg-indigo-600 text-white rounded-xl px-6 py-3 font-semibold hover:bg-indigo-700 transition">
-                Buscar empleo
-            </button>
+                <input type="text" placeholder="Ciudad o remoto" id="ciudad-remoto"
+                    class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
 
-        </div>
-    </section>
+                <select id="modalidad-search"
+                    class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <option>Modalidad</option>
+                    <option>Remoto</option>
+                    <option>Presencial</option>
+                    <option>Híbrido</option>
+                </select>
 
-    <!-- RESULTADOS -->
-    <section class="max-w-6xl mx-auto px-6 mt-16 space-y-6" id="contenedor-puestos">
+                <button
+                    class="bg-indigo-600 text-white rounded-xl px-6 py-3 font-semibold hover:bg-indigo-700 transition">
+                    Buscar empleo
+                </button>
+
+            </div>
+        </section>
+
+        <!-- RESULTADOS -->
+        <section class="max-w-6xl mx-auto px-6 mt-16 space-y-6" id="contenedor-puestos">
 
 
 
 
 
-    </section>
+        </section>
 
-    <!-- FOOTER -->
-    <footer class="mt-20 py-8 text-center text-sm text-slate-400">
-        © 2026 Nous · Todos los derechos reservados
-    </footer>
+        <!-- FOOTER -->
+        <footer class="mt-20 py-8 text-center text-sm text-slate-400">
+            © 2026 Nous · Todos los derechos reservados
+        </footer>
+    </div>
 
 
 
     <script src="index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
 
 </body>
 
