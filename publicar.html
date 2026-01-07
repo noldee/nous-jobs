@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publicar empleo | Nous</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-700">
+
+    <!-- NAV -->
+    <nav class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-indigo-600">Nous</h1>
+            <a href="index.html" class="text-sm text-slate-600 hover:text-indigo-600">
+                Volver al buscador
+            </a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="max-w-4xl mx-auto px-6 py-12 text-center">
+        <h2 class="text-3xl font-bold text-slate-800">
+            Publicar un nuevo empleo
+        </h2>
+        <p class="mt-3 text-slate-500">
+            Completa la información para encontrar al candidato ideal.
+        </p>
+    </header>
+
+    <!-- FORM -->
+    <main class="max-w-4xl mx-auto px-6 pb-16">
+
+        <form class="bg-white rounded-2xl shadow-sm p-8 space-y-6" id="formulario">
+
+            <!-- Puesto -->
+            <div id="card">
+                <label class="block text-sm font-medium text-slate-600 mb-1">
+                    Título del puesto
+                </label>
+                <input type="text" id="puesto" placeholder="Ej: Frontend Developer"
+                    class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+
+            <!-- Empresa -->
+            <div>
+                <label class="block text-sm font-medium text-slate-600 mb-1">
+                    Empresa
+                </label>
+                <input type="text" id="empresa" placeholder="Nombre de la empresa"
+                    class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+
+            <!-- Ubicación + Modalidad -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">
+                        Ubicación
+                    </label>
+                    <input type="text" id="ubicacion" placeholder="Ciudad o Remoto"
+                        class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">
+                        Modalidad
+                    </label>
+                    <select
+                    id="modalidad"
+                        class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option>Remoto</option>
+                        <option>Presencial</option>
+                        <option>Híbrido</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Tipo + Salario -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">
+                        Tipo de empleo
+                    </label>
+                    <select id="empleo"
+                        class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option>Full Time</option>
+                        <option>Part Time</option>
+                        <option>Freelance</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-600 mb-1">
+                        Salario estimado
+                    </label>
+                    <input id="salario" type="text" placeholder="$2,000 - $3,000 USD"
+                        class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                </div>
+            </div>
+
+            <!-- Descripción -->
+            <div>
+                <label class="block text-sm font-medium text-slate-600 mb-1">
+                    Descripción del empleo
+                </label>
+                <textarea id="descripcion" rows="5" placeholder="Describe las responsabilidades, requisitos y beneficios..."
+                    class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none"></textarea>
+            </div>
+
+            <!-- BOTONES -->
+            <div class="flex justify-end gap-4 pt-4">
+                <button type="reset"
+                id="limpiar-formulario"
+                    class="px-5 py-2 rounded-lg border border-slate-300 text-slate-600 hover:bg-slate-100 transition">
+                    Limpiar
+                </button>
+                <button type="submit"
+                    class="px-6 py-2 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition">
+                    Publicar empleo
+                </button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-sm text-slate-400 pb-6">
+        © 2026 Nous · Publica y conecta talento
+    </footer>
+    <script src="publicar.js"  type="module"></script>
+
+</body>
+
+</html>

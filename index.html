@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nous — Encuentra tu empleo ideal</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-700">
+
+    <!-- NAV -->
+    <nav class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-indigo-600">Nous</h1>
+            <a href="publicar.html"
+                class="text-sm bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
+                Publicar empleo
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="max-w-7xl mx-auto px-6 py-16 text-center">
+        <h2 class="text-4xl font-bold text-slate-800 leading-tight">
+            Encuentra el trabajo que<br />
+            <span class="text-indigo-600">encaja contigo</span>
+        </h2>
+        <p class="mt-4 text-slate-500 max-w-xl mx-auto">
+            Miles de oportunidades en tecnología, diseño y negocios.
+            Filtra, explora y aplica fácilmente.
+        </p>
+    </header>
+
+    <!-- BUSCADOR -->
+    <section class="max-w-6xl mx-auto px-6 -mt-10">
+        <div class="bg-white rounded-2xl shadow-lg p-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+
+            <input type="text" placeholder="Puesto o palabra clave"
+                class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+
+            <input type="text" placeholder="Ciudad o remoto"
+                class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+
+            <select
+                class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option>Modalidad</option>
+                <option>Remoto</option>
+                <option>Presencial</option>
+                <option>Híbrido</option>
+            </select>
+
+            <button class="bg-indigo-600 text-white rounded-xl px-6 py-3 font-semibold hover:bg-indigo-700 transition">
+                Buscar empleo
+            </button>
+
+        </div>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section class="max-w-6xl mx-auto px-6 mt-16 space-y-6" id="contenedor-puestos">
+
+
+
+
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-20 py-8 text-center text-sm text-slate-400">
+        © 2026 Nous · Todos los derechos reservados
+    </footer>
+
+
+
+    <script src="index.js" type="module"></script>
+
+</body>
+
+</html>
